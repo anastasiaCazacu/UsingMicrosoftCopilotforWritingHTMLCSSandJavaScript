@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Module 5 Project - Web Development Portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Web Development, Portfolio">
+    <meta name="author" content="Anastasia">
+    <meta name="theme-color" content="#333">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> <!-- Favicon for the website -->
+    <title>Module 5 Project</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 2rem;
+            margin: 1rem auto;
+            background: #fff;
+            border-radius: 5px;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #333;
+        }
+
+        ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        ul li {
+            margin: 0.5rem 0;
+        }
+
+        form label {
+            display: block;
+            margin: 0.5rem 0 0.2rem;
+        }
+
+        form input,
+        form textarea,
+        form button {
+            width: 100%;
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #555;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #333;
+            color: #fff;
+            margin-top: 2rem;
+        }
+
+        #skills {
+            background-color: #e8f5e9;
+            padding: 2rem;
+            margin: 1rem auto;
+            border-radius: 5px;
+            max-width: 800px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #skills h2 {
+            color: #2e7d32;
+            text-align: center;
+        }
+
+        #skills ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #skills ul li {
+            background: #c8e6c9;
+            color: #2e7d32;
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            font-weight: bold;
+        }
+
+        /* Enhance readability for different screen sizes */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+                line-height: 1.8;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            nav ul li {
+                display: block;
+                margin: 0.5rem 0;
+                text-align: center;
+            }
+
+            section {
+                padding: 1rem;
+            }
+
+            #skills ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #skills ul li {
+                width: 90%;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            section {
+                padding: 0.5rem;
+            }
+
+            form input,
+            form textarea,
+            form button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Module 5</h1>
+        <article>
+            <h2>Header Article</h2>
+            <p>This is an article inside the header section.</p>
+        </article>
+        <nav role="navigation" aria-label="Main Navigation">
+            <ul>
+                <li><a href="index.html" tabindex="0" role="menuitem">Home</a></li>
+                <li><a href="./001/index.html" tabindex="0" role="menuitem">My Portfolio</a></li>
+                <li><a href="./002/index.html" tabindex="0" role="menuitem">Booton</a></li>
+                <li><a href="#skills" tabindex="0" role="menuitem">Skills</a></li>
+                <li><a href="#contact" tabindex="0" role="menuitem">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hello! My name is Anastasia. I am passionate about web development and learning new technologies. Welcome to
+            my Module 5 project!</p>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <article>
+            <figure>
+                <img src="project1-placeholder.png"
+                    alt="Thumbnail of Project 1: Showcasing skills in HTML, CSS, and JavaScript">
+                <figcaption>Project 1</figcaption>
+            </figure>
+            <p>This is a brief description of Project 1. It showcases my skills in HTML, CSS, and JavaScript.</p>
+        </article>
+        <article>
+            <figure>
+                <img src="project2-placeholder.png"
+                    alt="Thumbnail of Project 2: Highlighting responsive web design skills">
+                <figcaption>Project 2</figcaption>
+            </figure>
+            <p>This is a brief description of Project 2. It highlights my ability to create responsive web designs.</p>
+        </article>
+        <article>
+            <figure>
+                <img src="project3-placeholder.jpg"
+                    alt="Thumbnail of Project 3: Demonstrating experience with JavaScript frameworks">
+                <figcaption>Project 3</figcaption>
+            </figure>
+            <p>This is a brief description of Project 3. It demonstrates my experience with JavaScript frameworks.</p>
+        </article>
+    </section>
+    <section id="skills">
+        <h2>My Skills</h2>
+        <ul>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+            <li>Version Control (Git)</li>
+            <li>JavaScript Frameworks (e.g., React, Angular)</li>
+            <li>Problem Solving</li>
+            <li>Team Collaboration</li>
+        </ul>
+    </section>
+
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit" tabindex="0">Send</button>
+        </form>
+        <div id="form-response"></div>
+    </section>
+    <!-- <main>
+        <p>This is the main content area for your Module 5 project.</p>
+        <button id="action-button">Click Me</button>
+        <div id="output-container"></div>
+    </main> -->
+    <!-- article -->
+    <!-- <article>
+        <h2>Article Title</h2>
+        <p>This is an article section where you can add more content.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+    </article> -->
+    <footer>
+        <p>&copy; 2025 Anastasia's Project</p>
+    </footer>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+
+</html>
